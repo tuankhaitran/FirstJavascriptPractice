@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <title>Login</title>
+
+ <script src="myscripts.js">
+
+</script>
+  
+
+</head>
+
+<body oncontextmenu="return false">
+
+  <div class="body"></div>
+		<div class="grad"></div>
+		<div class="header">
+			<div>Hello<span>JavaScript</span></div>
+		</div>
+		<br>
+		<form name="login">
+		<div class="login">
+				<input type="text" placeholder="Username" name="userid"><br>
+				<input type="password" placeholder="Password" name="pswrd"><br>
+				<input type="button" onclick="checkUser(this.form)" value="Login"/>
+		</div>
+
+
+
+</form>
+<script language="javascript">
+
+function checkUser(form)
+{
+ 
+ if(form.userid.value == "tuankhaitran" && form.pswrd.value == "123456789")
+  {
+    window.open('http://smartandsecurecomputing.org/tuantran/')
+  }
+ else
+ {
+   alert("Wrong username or password");
+ }
+}
+</script>
+</body>
+</html>
